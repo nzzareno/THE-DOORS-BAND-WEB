@@ -9,6 +9,7 @@ $sombra-texto: 0px 0px 0px black;
 $tipo-letra-parrafo: 'Merriweather';
 $tipo-letra-titulo: 'Montserrat';
 $tipo-letra-cowboy: 'Roboto Slab';
+$tipo-letra-nav: 'Lato';
 $titulo-responsive: 2.8em;
 $parrafo-grandote: 1.1em;
 
@@ -681,8 +682,10 @@ footer {
 
 .luka {
   text-align: center;
-  font-family: $tipo-letra-titulo;
+  font-family: $tipo-letra-nav;
 }
+
+
 
 .tute:hover {
   color: rgb(255, 255, 255) !important;
