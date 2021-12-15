@@ -17,6 +17,7 @@ ul {
   font-size: 1em;
   text-shadow: 0px 0px 0px black;
   font-family: "Roboto Slab";
+  list-style: none;
 }
 
 .mayoria, .robby {
@@ -554,19 +555,38 @@ footer a:hover {
 }
 
 .turner {
-  font-family: "Montserrat";
+  font-family: "Lato";
 }
 
 .rada li {
-  padding-bottom: 0.53em;
+  margin-top: 1em;
+  min-height: 7vh;
 }
 
 .radax li {
-  padding-bottom: 0.78em;
+  margin-top: 1em;
+  min-height: 9vh;
 }
 
 .radaz li {
-  padding-bottom: 0.71em;
+  margin-top: 1em;
+  padding-bottom: 0.2em;
+  min-height: 8.3vh;
+}
+
+.raday li {
+  margin-top: 2em;
+  min-height: 8.1vh;
+}
+
+.radam li {
+  margin-top: 1em;
+  min-height: 8vh;
+}
+
+.radab li {
+  margin-top: 1em;
+  min-height: 10vh;
 }
 
 .rudy {
@@ -580,6 +600,11 @@ footer a:hover {
 
 .listauno {
   margin-top: 1em;
+  font-family: "Montserrat";
+}
+
+.timmy {
+  font-family: "Montserrat";
 }
 
 .steveo {
@@ -590,15 +615,102 @@ footer a:hover {
 
 .xirius {
   background-image: url(../img/rarasa.jpg);
-  background-position-y: bottom;
-  background-attachment: fixed;
-  background-size: 1200px;
   background-position-y: center;
+  background-attachment: fixed;
+  background-size: 1240px;
+  background-position-x: center;
+  width: 100%;
   height: 100%;
 }
 
 .list-group-item {
   background-color: transparent;
+}
+
+.nombrefoot {
+  text-transform: uppercase;
+  text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.05em 0 rgba(0, 255, 0, 0.75), 0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  animation: glitch 240ms infinite;
+  position: relative;
+  font-size: 3.2rem;
+  font-family: "Montserrat";
+  color: white;
+}
+
+.nombrefoot span {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.nombrefoot span:first-child {
+  animation: glitch 777ms infinite;
+  opacity: 0.8;
+  clip-path: polygon(0 100%, 40% 100%, 100% 100%, 0 100%);
+  transform: translate(-0.0105em, -0.005em);
+  color: red;
+}
+
+.nombrefoot span:last-child {
+  animation: glitch 221ms infinite;
+  clip-path: polygon(0 100%, 40% 100%, 100% 100%, 0 100%);
+  transform: translate(0.0105em, 0em);
+  opacity: 0.8;
+  color: blue;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.05em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  14% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.05em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  15% {
+    text-shadow: -0.05em 0 0 rgba(255, 0, 0, 0.75), 0.025em 0.025em 0 rgba(0, 255, 0, 0.75), -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  49% {
+    text-shadow: -0.05em 0 0 rgba(255, 0, 0, 0.75), 0.025em 0.025em 0 rgba(0, 255, 0, 0.75), -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  50% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  99% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  100% {
+    text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+::before ::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+  }
+}
+@media (max-width: 767px) {
+  .steveo {
+    margin-bottom: 0;
+  }
+  .steveo p {
+    display: none;
+  }
+  .steveo h2 {
+    font-size: 1.56rem;
+  }
+  .steveo ol li {
+    background-color: transparent;
+  }
+
+  .remigalliard {
+    margin-bottom: 10em;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
