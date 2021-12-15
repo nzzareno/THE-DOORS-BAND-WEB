@@ -45,6 +45,14 @@ ul {
   text-shadow: $sombra-texto;
 }
 
+.mayoria {
+  margin-bottom: 2.5em;
+}
+
+.robby {
+  margin-bottom: 2em;
+}
+
 .guitartitle,  {
   font-family: $tipo-letra-titulo;
   font-size: $titulos-sub;
@@ -582,6 +590,8 @@ table th {
   text-shadow: 0px 1px 0px black;
 }
 
+
+
 .puesto {
   text-decoration: underline;
   color: rgb(255, 0, 0);
@@ -639,17 +649,17 @@ table th {
 }
 
 .gallery {
-  background-color: #dbddf1;
+  background-color: #fffb00;
   padding: 0 0;
  
 }
 
 .gallery .tupac {
-  background-color: #ffffff;
+  background-color: #000000;
   padding: 14px;
   
   width: 100%;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.37);
+  box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.486);
   cursor: pointer;
 }
 
@@ -666,14 +676,15 @@ footer {
   background-color: black;
 
   a:hover {
-    color: #ff6f6f !important;
+    color: #ff00ff !important;
   }
 }
 
 
 
 .tute {
-  color: #ff6f6f !important;
+  // color: rgb(22, 179, 241) !important;
+  color: #bf00bf !important;
   text-shadow: 1px 1px 1px black;
   margin-bottom: -5px;
   font-family: $tipo-letra-titulo;
@@ -690,7 +701,7 @@ footer {
 
 .tute:hover {
   color: rgb(255, 255, 255) !important;
-  background-color: rgba(119, 0, 119, 0.514) ;
+  
 }
 
 .topbody {
@@ -770,9 +781,16 @@ footer {
 
 
 .steveo {
-  background-color: rgba(255, 255, 255, 0.747);
+  // background-color: rgba(255, 255, 255, 0.774);
+  background-color: #fffb00d2;
   margin-bottom: 15em;
   width: 200px;
+
+  ol li:hover {
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .4s ease;
+  }
 }
 
 .xirius {
@@ -907,7 +925,7 @@ footer {
     
   }
 
-  
+ 
 }
 
 .remigalliard {
@@ -917,3 +935,4 @@ footer {
 
 
 }
+

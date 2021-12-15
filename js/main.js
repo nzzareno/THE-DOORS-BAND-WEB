@@ -1,47 +1,4 @@
 
-// const text = document.querySelector('.nombrefoot')
-// const strText = text.textContent;
-// const splitText = strText.split("");
-// text.textContent = "";
-
-// for(let i = 0; i < splitText.length; i++) {
-//     text.innerHTML += "<span>" + splitText[i] + "</span>";
-// }
-
-
-// let char = 0;
-// let timer = setInterval(onTick, 50);
-
-// function onTick(){
-//     const span = text.querySelectorAll('span')[char];
-//     span.classList.add('rash');
-//     char++
-//     if(char === splitText.length){
-//         complete();
-//         return;
-//     }
-// }
-
-
-
-
-
-
-// function complete(){
-//     clearInterval(timer);
-//     timer = null;
-// }
-
-
-
-
-
-
-
-
-
-
-
 
 var nav = document.querySelector('nav'); 
 
@@ -49,15 +6,28 @@ window.addEventListener('scroll', function(event) {
     event.preventDefault();
 
     if (window.scrollY <= 260) { 
-        nav.style.backgroundColor = '#000'; 
+        nav.style.backgroundColor = 'pink'; 
+        
         
     } else {
-        nav.style.backgroundColor = 'purple';
+        nav.style.backgroundColor = '#000';
         
        
     }
 
 });
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 document.addEventListener("click",function (e){

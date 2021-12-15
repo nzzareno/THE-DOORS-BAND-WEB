@@ -64,8 +64,10 @@ ul {
   overflow-y: hidden;
   margin-top: 7px;
   overflow: hidden;
-  transform: translate(-5%, -5%);
-  animation: play 2s infinite linear;
+  -webkit-transform: translate(-5%, -5%);
+          transform: translate(-5%, -5%);
+  -webkit-animation: play 2s infinite linear;
+          animation: play 2s infinite linear;
 }
 
 .vinilox {
@@ -74,34 +76,52 @@ ul {
   margin-top: 7px;
   margin-left: 7px;
   overflow-y: hidden;
-  transform: translate(-10%, -10%);
-  animation: play 2s infinite linear;
+  -webkit-transform: translate(-10%, -10%);
+          transform: translate(-10%, -10%);
+  -webkit-animation: play 2s infinite linear;
+          animation: play 2s infinite linear;
+}
+
+@-webkit-keyframes play {
+  0% {
+    -webkit-transform: translate(-10%, -10%) rotate(0deg);
+            transform: translate(-10%, -10%) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translate(-10%, -10%) rotate(180deg);
+            transform: translate(-10%, -10%) rotate(180deg);
+  }
+  100% {
+    -webkit-transform: translate(-10%, -10%) rotate(360deg);
+            transform: translate(-10%, -10%) rotate(360deg);
+  }
 }
 
 @keyframes play {
   0% {
-    transform: translate(-10%, -10%) rotate(0deg);
+    -webkit-transform: translate(-10%, -10%) rotate(0deg);
+            transform: translate(-10%, -10%) rotate(0deg);
   }
   50% {
-    transform: translate(-10%, -10%) rotate(180deg);
+    -webkit-transform: translate(-10%, -10%) rotate(180deg);
+            transform: translate(-10%, -10%) rotate(180deg);
   }
   100% {
-    transform: translate(-10%, -10%) rotate(360deg);
+    -webkit-transform: translate(-10%, -10%) rotate(360deg);
+            transform: translate(-10%, -10%) rotate(360deg);
   }
 }
+
 @media (max-width: 380px) {
   .vinilo, .vinilox {
     display: none;
   }
-
   .titlebio {
-    padding-left: 0.5em;
+    padding-left: .5em;
   }
-
   .titleband {
     font-size: 2.8em;
   }
-
   .titleband2 {
     font-family: sans-serif;
     font-size: 3em;
@@ -110,113 +130,126 @@ ul {
     margin-bottom: 1.5em;
   }
 }
+
 @media (max-width: 700px) {
   .vinilo {
     height: 55px;
     margin-left: 25px;
-    transform: translate(-5%, -5%);
-    animation: play 2s infinite linear;
+    -webkit-transform: translate(-5%, -5%);
+            transform: translate(-5%, -5%);
+    -webkit-animation: play 2s infinite linear;
+            animation: play 2s infinite linear;
   }
-
   .vinilox {
     height: 55px;
     margin-left: 20px;
     margin-right: 1em;
-    transform: translate(-10%, -10%);
-    animation: play 2s infinite linear;
+    -webkit-transform: translate(-10%, -10%);
+            transform: translate(-10%, -10%);
+    -webkit-animation: play 2s infinite linear;
+            animation: play 2s infinite linear;
   }
-
   .titlebio {
     font-size: 2.8em;
     font-family: "Montserrat";
     color: white;
   }
-
   .container-fluid h5 {
     font-size: 0.9em;
   }
-
   .videofram {
     height: 100px;
     width: 100%;
   }
-
   .fa-facebook-f {
     border-radius: 100%;
     color: #1453ff;
-    filter: drop-shadow(0px 0px 10px #1453ff);
-    transition: all 0.4s;
+    -webkit-filter: drop-shadow(0px 0px 10px #1453ff);
+            filter: drop-shadow(0px 0px 10px #1453ff);
+    -webkit-transition: all .4s;
+    transition: all .4s;
   }
-
   .fa-facebook-f:hover {
-    box-shadow: 0px 0px 10px #1453ff;
+    -webkit-box-shadow: 0px 0px 10px #1453ff;
+            box-shadow: 0px 0px 10px #1453ff;
   }
-
   .fa-twitter {
     border-radius: 100%;
     color: #85a6ff;
-    filter: drop-shadow(0px 0px 10px #85a6ff);
-    transition: all 0.4s;
+    -webkit-filter: drop-shadow(0px 0px 10px #85a6ff);
+            filter: drop-shadow(0px 0px 10px #85a6ff);
+    -webkit-transition: all .4s;
+    transition: all .4s;
   }
-
   .fa-twitter:hover {
-    box-shadow: 0px 0px 10px #85a6ff;
+    -webkit-box-shadow: 0px 0px 10px #85a6ff;
+            box-shadow: 0px 0px 10px #85a6ff;
   }
-
   .fa-instagram {
     border-radius: 100%;
     color: #750d37;
-    filter: drop-shadow(0px 0px 10px #750D37);
-    transition: all 0.4s;
+    -webkit-filter: drop-shadow(0px 0px 10px #750D37);
+            filter: drop-shadow(0px 0px 10px #750D37);
+    -webkit-transition: all .4s;
+    transition: all .4s;
   }
-
   .fa-instagram:hover {
-    box-shadow: 0px 0px 10px #750D37;
+    -webkit-box-shadow: 0px 0px 10px #750D37;
+            box-shadow: 0px 0px 10px #750D37;
   }
-
   .fa-certificate {
     border-radius: 100%;
     color: #83ca00;
-    filter: drop-shadow(0px 0px 10px #83ca00);
-    transition: all 0.4s;
+    -webkit-filter: drop-shadow(0px 0px 10px #83ca00);
+            filter: drop-shadow(0px 0px 10px #83ca00);
+    -webkit-transition: all .4s;
+    transition: all .4s;
   }
-
   .fa-certificate:hover {
-    box-shadow: 0px 0px 10px #83ca00;
+    -webkit-box-shadow: 0px 0px 10px #83ca00;
+            box-shadow: 0px 0px 10px #83ca00;
   }
-
   .fa-music {
     border-radius: 100%;
     color: #ffffff;
-    filter: drop-shadow(0px 0px 10px #ff0077);
-    transition: all 0.4s;
+    -webkit-filter: drop-shadow(0px 0px 10px #ff0077);
+            filter: drop-shadow(0px 0px 10px #ff0077);
+    -webkit-transition: all .4s;
+    transition: all .4s;
   }
-
   .fa-music:hover {
-    box-shadow: 0px 0px 10px #ff0077;
+    -webkit-box-shadow: 0px 0px 10px #ff0077;
+            box-shadow: 0px 0px 10px #ff0077;
   }
-
   .fa-wikipedia-w {
     border-radius: 100%;
     color: #c9c9c9;
-    filter: drop-shadow(0px 0px 10px gray);
-    transition: all 0.4s;
+    -webkit-filter: drop-shadow(0px 0px 10px gray);
+            filter: drop-shadow(0px 0px 10px gray);
+    -webkit-transition: all .4s;
+    transition: all .4s;
   }
-
   .fa-wikipedia-w:hover {
-    box-shadow: 0px 0px 10px gray;
+    -webkit-box-shadow: 0px 0px 10px gray;
+            box-shadow: 0px 0px 10px gray;
   }
-
   .tutu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-
   #cristiano {
     height: 20px;
   }
 }
+
 .johnny {
   margin-left: 20px;
   margin-right: 295px;
@@ -244,67 +277,85 @@ ul {
 .fa-facebook-f {
   border-radius: 100%;
   color: #1453ff;
-  filter: drop-shadow(0px 0px 10px #1453ff);
-  transition: all 0.5s;
+  -webkit-filter: drop-shadow(0px 0px 10px #1453ff);
+          filter: drop-shadow(0px 0px 10px #1453ff);
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 .fa-facebook-f:hover {
-  box-shadow: 0px 0px 10px #1453ff;
+  -webkit-box-shadow: 0px 0px 10px #1453ff;
+          box-shadow: 0px 0px 10px #1453ff;
 }
 
 .fa-twitter {
   border-radius: 100%;
   color: #85a6ff;
-  filter: drop-shadow(0px 0px 10px #85a6ff);
-  transition: all 0.4s;
+  -webkit-filter: drop-shadow(0px 0px 10px #85a6ff);
+          filter: drop-shadow(0px 0px 10px #85a6ff);
+  -webkit-transition: all .4s;
+  transition: all .4s;
 }
 
 .fa-twitter:hover {
-  box-shadow: 0px 0px 10px #85a6ff;
+  -webkit-box-shadow: 0px 0px 10px #85a6ff;
+          box-shadow: 0px 0px 10px #85a6ff;
 }
 
 .fa-instagram {
   border-radius: 100%;
   color: #750d37;
-  filter: drop-shadow(0px 0px 10px #750D37);
-  transition: all 0.4s;
+  -webkit-filter: drop-shadow(0px 0px 10px #750D37);
+          filter: drop-shadow(0px 0px 10px #750D37);
+  -webkit-transition: all .4s;
+  transition: all .4s;
 }
 
 .fa-instagram:hover {
-  box-shadow: 0px 0px 10px #750D37;
+  -webkit-box-shadow: 0px 0px 10px #750D37;
+          box-shadow: 0px 0px 10px #750D37;
 }
 
 .fa-certificate {
   border-radius: 100%;
   color: #83ca00;
-  filter: drop-shadow(0px 0px 10px #83ca00);
-  transition: all 0.4s;
+  -webkit-filter: drop-shadow(0px 0px 10px #83ca00);
+          filter: drop-shadow(0px 0px 10px #83ca00);
+  -webkit-transition: all .4s;
+  transition: all .4s;
 }
 
 .fa-certificate:hover {
-  box-shadow: 0px 0px 10px #83ca00;
+  -webkit-box-shadow: 0px 0px 10px #83ca00;
+          box-shadow: 0px 0px 10px #83ca00;
 }
 
 .fa-music {
   border-radius: 100%;
   color: #a55d5d;
-  filter: drop-shadow(0px 0px 10px #ff0000);
-  transition: all 0.4s;
+  -webkit-filter: drop-shadow(0px 0px 10px #ff0000);
+          filter: drop-shadow(0px 0px 10px #ff0000);
+  -webkit-transition: all .4s;
+  transition: all .4s;
 }
 
 .fa-music:hover {
-  box-shadow: 0px 0px 10px #c40000;
+  -webkit-box-shadow: 0px 0px 10px #c40000;
+          box-shadow: 0px 0px 10px #c40000;
 }
 
 .fa-wikipedia-w {
   border-radius: 100%;
   color: #c9c9c9;
-  filter: drop-shadow(0px 0px 10px gray);
-  transition: all 0.4s;
+  -webkit-filter: drop-shadow(0px 0px 10px gray);
+          filter: drop-shadow(0px 0px 10px gray);
+  -webkit-transition: all .4s;
+  transition: all .4s;
 }
 
 .fa-wikipedia-w:hover {
-  box-shadow: 0px 0px 10px gray;
+  -webkit-box-shadow: 0px 0px 10px gray;
+          box-shadow: 0px 0px 10px gray;
 }
 
 .loader {
@@ -317,7 +368,17 @@ ul {
   top: -17px;
   right: -30px;
   background-color: #03e9f4;
-  animation: blinkCursor 0.8s steps(1) infinite;
+  -webkit-animation: blinkCursor 0.8s steps(1) infinite;
+          animation: blinkCursor 0.8s steps(1) infinite;
+}
+
+@-webkit-keyframes blinkCursor {
+  0%, 75% {
+    opacity: 1;
+  }
+  76%, 100% {
+    opacity: 0;
+  }
 }
 
 @keyframes blinkCursor {
@@ -328,14 +389,25 @@ ul {
     opacity: 0;
   }
 }
+
 .loader h4 {
   position: relative;
   color: #03e9f4;
   letter-spacing: 5px;
   font-size: 1.5em;
   text-transform: uppercase;
-  animation: typing 7s steps(65) infinite;
+  -webkit-animation: typing 7s steps(65) infinite;
+          animation: typing 7s steps(65) infinite;
   overflow: hidden;
+}
+
+@-webkit-keyframes typing {
+  0%, 90%, 100% {
+    width: 0;
+  }
+  30%, 60% {
+    width: 25em;
+  }
 }
 
 @keyframes typing {
@@ -346,6 +418,7 @@ ul {
     width: 25em;
   }
 }
+
 .fa-caret-square-up {
   height: 200px;
   margin-right: 50px;
@@ -358,41 +431,47 @@ ul {
 .fa-spotify {
   border-radius: 100%;
   color: #14ff14;
-  filter: drop-shadow(0px 0px 10px #008000);
-  transition: all 0.4s;
+  -webkit-filter: drop-shadow(0px 0px 10px #008000);
+          filter: drop-shadow(0px 0px 10px #008000);
+  -webkit-transition: all .4s;
+  transition: all .4s;
 }
 
 .fa-spotify:hover {
-  box-shadow: 0px 0px 10px #008000;
+  -webkit-box-shadow: 0px 0px 10px #008000;
+          box-shadow: 0px 0px 10px #008000;
 }
 
 .fa-youtube {
   border-radius: 100%;
   color: #ff0000;
-  filter: drop-shadow(0px 0px 10px #ff0000);
-  transition: all 0.4s;
+  -webkit-filter: drop-shadow(0px 0px 10px #ff0000);
+          filter: drop-shadow(0px 0px 10px #ff0000);
+  -webkit-transition: all .4s;
+  transition: all .4s;
 }
 
 .fa-youtube:hover {
-  box-shadow: 0px 0px 10px #ff0000;
+  -webkit-box-shadow: 0px 0px 10px #ff0000;
+          box-shadow: 0px 0px 10px #ff0000;
 }
 
 .cent50 {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 3em;
   color: white;
   background-color: black;
 }
 
 .titleband {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 3em;
   color: white;
   background-color: black;
 }
 
 .titleband2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 3em;
   color: white;
   background-color: black;
@@ -403,38 +482,38 @@ ul {
   .titleband2 {
     font-size: 2em;
   }
-
   .cent50 {
     font-size: 2em;
   }
 }
+
 @media (max-width: 400px) {
   .titleband2 {
     font-size: 1.8em;
   }
-
   .cent50 {
     font-size: 1.8em;
   }
 }
+
 @media (max-width: 350px) {
   .titleband2 {
     font-size: 1.6em;
   }
-
   .cent50 {
     font-size: 1.6em;
   }
 }
+
 @media (max-width: 308px) {
   .titleband2 {
     font-size: 1.2em;
   }
-
   .cent50 {
     font-size: 1.2em;
   }
 }
+
 table th {
   font-family: "Roboto Slab";
   text-align: center;
@@ -444,6 +523,7 @@ table th {
 .rock p {
   font-size: 1.1em;
 }
+
 .rock .carreraray {
   margin-top: 20px;
   font-family: "Montserrat";
@@ -506,7 +586,8 @@ table th {
   max-width: 100%;
   height: 96%;
   width: 100%;
-  transition: all 0.5s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 .gallery {
@@ -518,12 +599,14 @@ table th {
   background-color: #000000;
   padding: 14px;
   width: 100%;
-  box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.486);
+  -webkit-box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.486);
+          box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.486);
   cursor: pointer;
 }
 
 .gallery:hover .tupac:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 #gallery-modal .modal-img {
@@ -533,6 +616,7 @@ table th {
 footer {
   background-color: black;
 }
+
 footer a:hover {
   color: #ff00ff !important;
 }
@@ -577,7 +661,7 @@ footer a:hover {
 
 .radaz li {
   margin-top: 1em;
-  padding-bottom: 0.2em;
+  padding-bottom: .20em;
   min-height: 8.3vh;
 }
 
@@ -600,7 +684,7 @@ footer a:hover {
   margin-top: 0.5em;
   margin-bottom: 1em;
   font-size: 2.8em;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: purple;
   text-shadow: 1px 1px 1px black;
 }
@@ -619,10 +703,12 @@ footer a:hover {
   margin-bottom: 15em;
   width: 200px;
 }
+
 .steveo ol li:hover {
   background-color: transparent;
   cursor: pointer;
-  transition: all 0.4s ease;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
 }
 
 .xirius {
@@ -642,7 +728,8 @@ footer a:hover {
 .nombrefoot {
   text-transform: uppercase;
   text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.05em 0 rgba(0, 255, 0, 0.75), 0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
-  animation: glitch 240ms infinite;
+  -webkit-animation: glitch 240ms infinite;
+          animation: glitch 240ms infinite;
   position: relative;
   font-size: 3.2rem;
   font-family: "Montserrat";
@@ -656,19 +743,49 @@ footer a:hover {
 }
 
 .nombrefoot span:first-child {
-  animation: glitch 777ms infinite;
+  -webkit-animation: glitch 777ms infinite;
+          animation: glitch 777ms infinite;
   opacity: 0.8;
-  clip-path: polygon(0 100%, 40% 100%, 100% 100%, 0 100%);
-  transform: translate(-0.0105em, -0.005em);
+  -webkit-clip-path: polygon(0 100%, 40% 100%, 100% 100%, 0 100%);
+          clip-path: polygon(0 100%, 40% 100%, 100% 100%, 0 100%);
+  -webkit-transform: translate(-0.0105em, -0.005em);
+          transform: translate(-0.0105em, -0.005em);
   color: red;
 }
 
 .nombrefoot span:last-child {
-  animation: glitch 221ms infinite;
-  clip-path: polygon(0 100%, 40% 100%, 100% 100%, 0 100%);
-  transform: translate(0.0105em, 0em);
+  -webkit-animation: glitch 221ms infinite;
+          animation: glitch 221ms infinite;
+  -webkit-clip-path: polygon(0 100%, 40% 100%, 100% 100%, 0 100%);
+          clip-path: polygon(0 100%, 40% 100%, 100% 100%, 0 100%);
+  -webkit-transform: translate(0.0105em, 0em);
+          transform: translate(0.0105em, 0em);
   opacity: 0.8;
   color: blue;
+}
+
+@-webkit-keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.05em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  14% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.05em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  15% {
+    text-shadow: -0.05em 0 0 rgba(255, 0, 0, 0.75), 0.025em 0.025em 0 rgba(0, 255, 0, 0.75), -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  49% {
+    text-shadow: -0.05em 0 0 rgba(255, 0, 0, 0.75), 0.025em 0.025em 0 rgba(0, 255, 0, 0.75), -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  50% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  99% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  100% {
+    text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
 }
 
 @keyframes glitch {
@@ -694,18 +811,26 @@ footer a:hover {
     text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.025em 0 rgba(0, 255, 0, 0.75), -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
   }
 }
+
 @media (prefers-reduced-motion: reduce) {
   *,
-::before ::after {
-    animation-delay: -1ms !important;
-    animation-duration: 1ms !important;
-    animation-iteration-count: 1 !important;
+  ::before
+::after {
+    -webkit-animation-delay: -1ms !important;
+            animation-delay: -1ms !important;
+    -webkit-animation-duration: 1ms !important;
+            animation-duration: 1ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
     background-attachment: initial !important;
     scroll-behavior: auto !important;
-    transition-duration: 0s !important;
-    transition-delay: 0s !important;
+    -webkit-transition-duration: 0s !important;
+            transition-duration: 0s !important;
+    -webkit-transition-delay: 0s !important;
+            transition-delay: 0s !important;
   }
 }
+
 @media (max-width: 767px) {
   .steveo {
     margin-bottom: 0;
@@ -719,10 +844,8 @@ footer a:hover {
   .steveo ol li {
     background-color: transparent;
   }
-
   .remigalliard {
     margin-bottom: 10em;
   }
 }
-
 /*# sourceMappingURL=main.css.map */
