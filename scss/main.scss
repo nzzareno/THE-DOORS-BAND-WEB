@@ -15,7 +15,6 @@ $parrafo-grandote: 1.1em;
 
 
 
-
 .tabletitulo {
   font-size: $titulos-sub;
   font-weight: $negrita;
@@ -26,27 +25,27 @@ $parrafo-grandote: 1.1em;
 }
 
 p {
-  font-size: $sub-parrafo;
+  font-size: $parrafo-tamanio;
   text-shadow: $sombra-texto;
-  font-family: "Monument Extended" ;
+  font-family: $tipo-letra-cowboy ;
 }
 
 ul {
   font-size: $parrafo-tamanio;
   text-shadow: $sombra-texto;
-  font-family: 'Monument Extended';
+  font-family: $tipo-letra-cowboy;
   list-style: none;
 }
 
 
 .mayoria, .robby {
-  font-family: 'Monument Extended';
+  font-family: $tipo-letra-cowboy;
   font-size: $parrafo-tamanio;
   text-shadow: $sombra-texto;
 }
 
 .mayoria {
-  margin-bottom: 2.5em;
+  margin-bottom: 1.5em;
 }
 
 .robby {
@@ -125,7 +124,8 @@ ul {
   }
 
   .titlebio {
-    padding-left: .5em;
+    
+    
   }
   
   .titleband {
@@ -169,7 +169,7 @@ ul {
 
 
   .titlebio {
-    font-size: $titulo-responsive;
+    font-size: 2.3em;
     font-family: $tipo-letra-titulo;
     
     
@@ -281,7 +281,7 @@ ul {
 
 .cssload-loader {
 	position: relative;
-	left: calc(100% + 23.5em);
+	left: calc(100% + 114%);
 	width: 38px;
 	height: 38px;
 	border-radius: 50%;
@@ -484,30 +484,26 @@ ul {
   margin-left: -2rem;
   
   margin-right: 2em;
-  width: auto;
+  
 }
 
 .ryan {
- margin-left: -3rem ;
- 
-  
-  width: auto;
+
 }
 
 .logan {
-  margin-left: -4.4rem;
   
-  width: auto;
+  
+
 
 }
 
 
 .morris {
 
-  margin-left: -5rem;
+
   
   
-  width: auto;
 }
 
 
@@ -529,7 +525,7 @@ ul {
 body {
   
   font-size: $parrafo-grandote !important;
-  overflow-x: hidden;
+  
 }
 
 
@@ -731,8 +727,25 @@ body {
     font-size: 2em;
   }
 
+  table  {
+    display: none;
+  }
+
+  .tabletitulo {
+    display: none;
+  }
+
+  .vinilo {
+    display: none;
+  }
 
 
+  .vinilox {
+    display: none;
+  }
+  .titlebio {
+    margin-left: 23%;
+  }
 }
 
 
@@ -746,6 +759,8 @@ body {
 .cent50 {
   font-size: 1.8em;
 }
+
+
 }
 
 @media (max-width: 350px) {
@@ -852,9 +867,10 @@ table th {
 
  .imagen-corporal {
    background-color: black;
+   overflow-x: hidden;
  }
 
- 
+  
 
 .tupac {
   
@@ -922,14 +938,14 @@ footer {
 }
 
 .topbody {
-  margin: 0;
-  padding: 0;
+  overflow-x: hidden;
   background-color: #000000;
 }
 
 .turner {
   font-family: $tipo-letra-nav;
 }
+
 
 
 .rada li {
@@ -1001,7 +1017,7 @@ footer {
   // background-color: rgba(255, 255, 255, 0.774);
   background-color: #fffb00d2;
   margin-bottom: 15em;
-  width: 200px;
+  width:  100%;
     ol li {
       font-family: $tipo-letra-titulo;
       background-color: transparent;
@@ -1017,10 +1033,9 @@ footer {
   background-image: url(../img/rarasa.jpg);
   background-position-y: center;
   background-attachment: fixed;
-  background-size: 1240px;
+  background-size: cover;
   background-position-x: center;
-  width: 100%;
-  height: 100%;
+  
   
 }
 
@@ -1068,7 +1083,9 @@ footer {
   
 }
 
-
+.rulera {
+  margin: 0;
+}
 
 @keyframes glitch {
   0% {

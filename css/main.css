@@ -8,26 +8,26 @@
 }
 
 p {
-  font-size: 0.9em;
+  font-size: 1em;
   text-shadow: 0px 0px 0px black;
-  font-family: "Monument Extended";
+  font-family: "Roboto Slab";
 }
 
 ul {
   font-size: 1em;
   text-shadow: 0px 0px 0px black;
-  font-family: "Monument Extended";
+  font-family: "Roboto Slab";
   list-style: none;
 }
 
 .mayoria, .robby {
-  font-family: "Monument Extended";
+  font-family: "Roboto Slab";
   font-size: 1em;
   text-shadow: 0px 0px 0px black;
 }
 
 .mayoria {
-  margin-bottom: 2.5em;
+  margin-bottom: 1.5em;
 }
 
 .robby {
@@ -94,10 +94,6 @@ ul {
     display: none;
   }
 
-  .titlebio {
-    padding-left: 0.5em;
-  }
-
   .titleband {
     font-size: 2.8em;
   }
@@ -127,7 +123,7 @@ ul {
   }
 
   .titlebio {
-    font-size: 2.8em;
+    font-size: 2.3em;
     font-family: "Montserrat";
     color: white;
   }
@@ -219,7 +215,7 @@ ul {
 }
 .cssload-loader {
   position: relative;
-  left: calc(100% + 23.5em);
+  left: 214%;
   width: 38px;
   height: 38px;
   border-radius: 50%;
@@ -402,22 +398,6 @@ ul {
 .johnny {
   margin-left: -2rem;
   margin-right: 2em;
-  width: auto;
-}
-
-.ryan {
-  margin-left: -3rem;
-  width: auto;
-}
-
-.logan {
-  margin-left: -4.4rem;
-  width: auto;
-}
-
-.morris {
-  margin-left: -5rem;
-  width: auto;
 }
 
 .fa-facebook-f {
@@ -433,7 +413,6 @@ ul {
 
 body {
   font-size: 1.1em !important;
-  overflow-x: hidden;
 }
 
 @font-face {
@@ -595,6 +574,26 @@ body {
   .cent50 {
     font-size: 2em;
   }
+
+  table {
+    display: none;
+  }
+
+  .tabletitulo {
+    display: none;
+  }
+
+  .vinilo {
+    display: none;
+  }
+
+  .vinilox {
+    display: none;
+  }
+
+  .titlebio {
+    margin-left: 23%;
+  }
 }
 @media (max-width: 400px) {
   .titleband2 {
@@ -687,6 +686,7 @@ table th {
 
 .imagen-corporal {
   background-color: black;
+  overflow-x: hidden;
 }
 
 .tupac {
@@ -744,8 +744,7 @@ footer a:hover {
 }
 
 .topbody {
-  margin: 0;
-  padding: 0;
+  overflow-x: hidden;
   background-color: #000000;
 }
 
@@ -805,7 +804,7 @@ footer a:hover {
 .steveo {
   background-color: #fffb00d2;
   margin-bottom: 15em;
-  width: 200px;
+  width: 100%;
 }
 .steveo ol li {
   font-family: "Montserrat";
@@ -820,10 +819,8 @@ footer a:hover {
   background-image: url(../img/rarasa.jpg);
   background-position-y: center;
   background-attachment: fixed;
-  background-size: 1240px;
+  background-size: cover;
   background-position-x: center;
-  width: 100%;
-  height: 100%;
 }
 
 .list-group-item {
@@ -860,6 +857,10 @@ footer a:hover {
   transform: translate(0.0105em, 0em);
   opacity: 0.8;
   color: blue;
+}
+
+.rulera {
+  margin: 0;
 }
 
 @keyframes glitch {
