@@ -17,9 +17,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet"> 
 <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet"> 
 <link rel="shortcut icon" href="../img/bestjim.png">
+<script
+			  src="https://code.jquery.com/jquery-3.5.0.min.js"
+			  integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+			  crossorigin="anonymous"></script>
   <title>THE BAND - THE DOORS</title>
 </head>
 <body class="topbody">
+  <b:if cond='data:blog.canonicalUrl == data:blog.canonicalHomepageUrl'>
+    <div class='loader'></div>
+</b:if>
   <header class="container-fluid  px-0 ">
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top " style="background-color: pink;">
@@ -66,6 +73,12 @@
             TOP 10!
           </a>
         </li>
+
+        <div class="cssload-loader">
+          <div class="cssload-inner cssload-one"></div>
+          <div class="cssload-inner cssload-two"></div>
+          <div class="cssload-inner cssload-three"></div>
+        </div>
       </ul>
       </div>
       </nav>
@@ -97,11 +110,11 @@
 
     <div class="row mb-5 ">
 
-      <div class="d-flex tutu justify-content-betweenflex-xs-column flex-sm-column flex-lg-column flex-xl-row ">
+      <div class="d-flex tutu justify-content-between flex-xs-column flex-sm-column flex-md-column flex-lg-row flex-xl-row ">
 
       <div>
 
-     <img src="../img/messi.webp" class="morris h-auto w-100" width="100%" alt="frontjim">
+     <img src="../img/messi.webp" class="morris h-auto " alt="frontjim">
 
         
       </div>
@@ -135,11 +148,11 @@
 
       <div class="row mb-5">
 
-        <div class="d-flex justify-content-between tutu flex-xs-column flex-sm-column flex-lg-column flex-xl-row">
+        <div class="d-flex justify-content-between tutu flex-xs-column flex-sm-column flex-md-column flex-lg-row flex-xl-row">
 
 
           <div>
-            <img src="../img/ronaldo.png" class="h-auto w-100 logan" width="100%" alt="manzana">
+            <img src="../img/ronaldo.png" class="h-auto logan" width="100%"  alt="manzdana">
             
            
           </div>
@@ -180,7 +193,7 @@
 
       <div class="row mb-5">
 
-        <div class="d-flex justify-content-between tutu flex-xs-column flex-sm-column flex-lg-column flex-xl-row flex-nowrap">
+        <div class="d-flex justify-content-between tutu flex-xs-column flex-sm-column flex-md-column flex-lg-row flex-xl-row ">
 
           <div>
             <img src="../img/zlatan.png" class="h-auto ryan" width="100%" alt="kreg">
@@ -237,10 +250,10 @@
 
       <div class="row ">
 
-        <div class="d-flex justify-content-between tutu flex-xs-column flex-sm-column flex-lg-column flex-xl-row flex-nowrap">
+        <div class="d-flex justify-content-between tutu flex-xs-column flex-sm-column flex-md-column flex-lg-row  flex-xl-row ">
 
           <div> 
-            <img src="../img/zidane.webp" class=" h-auto johnny " width="110%" alt="bater">
+            <img src="../img/zidane.webp" class=" h-auto johnny " width="100%" alt="bater">
         
           </div>
           

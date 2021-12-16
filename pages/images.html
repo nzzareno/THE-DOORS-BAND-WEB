@@ -17,9 +17,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet"> 
   <link rel="shortcut icon" href="../img/bestjim.png">
+  <script
+			  src="https://code.jquery.com/jquery-3.5.0.min.js"
+			  integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+			  crossorigin="anonymous"></script>
   <title>IMAGE MOMENTS - THE DOORS</title>
 </head>
 <body class="imagen-corporal">
+  <b:if cond='data:blog.canonicalUrl == data:blog.canonicalHomepageUrl'>
+    <div class='loader'></div>
+</b:if>
   <header class="container-fluid  px-0 ">
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top " style="background-color: pink;">
@@ -66,6 +73,12 @@
             TOP 10!
           </a>
         </li>
+
+        <div class="cssload-loader">
+          <div class="cssload-inner cssload-one"></div>
+          <div class="cssload-inner cssload-two"></div>
+          <div class="cssload-inner cssload-three"></div>
+        </div>
       </ul>
       </div>
       </nav>

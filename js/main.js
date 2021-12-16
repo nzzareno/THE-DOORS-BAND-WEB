@@ -1,4 +1,7 @@
 
+    $(window).on("load", function(){
+           $(".loader").fadeOut(1500);
+    });
 
 var nav = document.querySelector('nav'); 
 
@@ -16,19 +19,6 @@ window.addEventListener('scroll', function(event) {
     }
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 document.addEventListener("click",function (e){
   if(e.target.classList.contains("gallery-item")){

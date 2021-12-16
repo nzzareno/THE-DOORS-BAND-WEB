@@ -17,10 +17,25 @@
 <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet"> 
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet"> 
 <link rel="shortcut icon" href="img/bestjim.png">
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js' type='text/javascript'></script>
+
+<script
+			  src="https://code.jquery.com/jquery-3.5.0.min.js"
+			  integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+			  crossorigin="anonymous"></script>
+
   <title>THE DOORS - HOME</title>
 </head>
 <body class="topbody">
 
+ 
+
+ <b:if cond='data:blog.canonicalUrl == data:blog.canonicalHomepageUrl'>
+    <div class='loader'></div>
+</b:if>
+  
+
+  
   <header class="container-fluid  px-0 ">
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top " style="background-color: pink;">
@@ -67,9 +82,17 @@
             TOP 10!
           </a>
         </li>
+
+        <div class="cssload-loader">
+          <div class="cssload-inner cssload-one"></div>
+          <div class="cssload-inner cssload-two"></div>
+          <div class="cssload-inner cssload-three"></div>
+        </div>
       </ul>
       </div>
+      
       </nav>
+      
       <div class="container-fluid mx-0 px-0 mt-5">
     <img src="img/rut3.jpg"  height="177px" width="100%" alt="portada">
   </div>
@@ -331,6 +354,8 @@
   </div>
   </div>
   </footer>
+
+  
 
   <script src="js/main.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
