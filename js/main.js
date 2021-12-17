@@ -9,7 +9,7 @@ window.addEventListener('scroll', function(event) {
     event.preventDefault();
 
     if (window.scrollY <= 260) { 
-        nav.style.backgroundColor = 'pink'; 
+        nav.style.backgroundColor = '#092009;'; 
         
         
     } else {

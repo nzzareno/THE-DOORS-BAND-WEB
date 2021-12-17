@@ -27,7 +27,8 @@ $parrafo-grandote: 1.1em;
 p {
   font-size: $parrafo-tamanio;
   text-shadow: $sombra-texto;
-  font-family: $tipo-letra-cowboy ;
+  font-family: 'monument extended' ;
+  
 }
 
 ul {
@@ -133,7 +134,7 @@ ul {
   }
 
   .titleband2 {
-    font-family: sans-serif;
+    font-family: $tipo-letra-titulo;
     font-size: $principal-titulo;
     color: white;
     background-color: rgb(167, 0, 0);
@@ -273,9 +274,7 @@ ul {
   justify-content: space-between;
 }
 
-#cristiano {
-  height: 20px;
-}
+
 
 }
 
@@ -478,33 +477,6 @@ ul {
 	}
 }
 
-
-
-.johnny {
-  margin-left: -2rem;
-  
-  margin-right: 2em;
-  
-}
-
-.ryan {
-
-}
-
-.logan {
-  
-  
-
-
-}
-
-
-.morris {
-
-
-  
-  
-}
 
 
 
@@ -796,7 +768,9 @@ table th {
 
 
 
-
+.carreraray {
+  color: #ffff68;
+}
 
 
 .rock {
@@ -866,8 +840,8 @@ table th {
  }
 
  .imagen-corporal {
-   background-color: black;
-   overflow-x: hidden;
+   background-color: rgb(255, 129, 129);
+   
  }
 
   
@@ -938,7 +912,7 @@ footer {
 }
 
 .topbody {
-  overflow-x: hidden;
+  
   background-color: #000000;
 }
 
@@ -1004,29 +978,36 @@ footer {
 .listauno {
   margin-top: 1em;
   font-family: $tipo-letra-titulo;
+  color: #ffff68;
 }
 
 
 .timmy {
   font-family: $tipo-letra-titulo;
+  color: #ffff68;
 }
 
 
 
 .steveo {
   // background-color: rgba(255, 255, 255, 0.774);
-  background-color: #fffb00d2;
-  margin-bottom: 15em;
+  background-color: #071b07f6;
+  margin-bottom: 7em;
   width:  100%;
     ol li {
       font-family: $tipo-letra-titulo;
-      background-color: transparent;
+      background-color:  #0924091e;
+      color: rgb(255, 0, 255);
     }
   ol li:hover {
-    background-color: #fffb00;
+    background-color: #68660017;
     
     transition: all .4s ease;
   }
+}
+
+#ojorudez {
+  color: yellow;
 }
 
 .xirius {
@@ -1150,7 +1131,7 @@ footer {
 .steveo {
   margin-bottom: 0;
   p{
-    display: none;
+    // display: none;
   }
 
   h2 {
@@ -1184,4 +1165,45 @@ footer {
   background: url(../img/829.gif) 50% 50% no-repeat #000000;
   
   opacity: 97.7%;
+}
+
+.fontheight {
+  font-size: 1.5rem;
+  color: #fffb00;
+}
+
+.fontheighxt {
+  font-size: 40px;
+  color: #fffb00;
+  
+}
+
+#don {
+  font-size: 1.5rem;
+
+  padding: 1rem;
+  color: #fffb00;
+}
+
+#raymanzak {
+  font-size: 1.5rem;
+  color: #fffb00;
+}
+
+#margenlist {
+  margin-right: 14rem;
+  
+}
+
+#knoxville {
+  background-color: #071b07f6;
+}
+
+#knoxvillee {
+  margin-bottom: 0;
+  background-color: #071b07f6;
+}
+
+#finalcol {
+  margin-bottom: 0;
 }
