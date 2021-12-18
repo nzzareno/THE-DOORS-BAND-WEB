@@ -211,7 +211,7 @@ ul {
 }
 .cssload-loader {
   position: relative;
-  left: 214%;
+  left: 184%;
   width: 38px;
   height: 38px;
   border-radius: 50%;
@@ -704,12 +704,37 @@ table th {
   cursor: pointer;
 }
 
+.gallery-item {
+  background-color: black;
+  padding: 1rem;
+  margin-bottom: 1.3rem;
+  width: 100%;
+  box-shadow: 5px 5px 15px black;
+  cursor: pointer;
+}
+
+.gallery-item:hover {
+  transform: scale(1.2);
+}
+
 .gallery:hover .tupac:hover {
   transform: scale(1.2);
 }
 
 #gallery-modal .modal-img {
   width: 100%;
+}
+
+.modal-body {
+  background-color: black;
+}
+
+.modal-header {
+  background-color: black;
+}
+
+.modal-content {
+  background-color: #000;
 }
 
 footer {
@@ -920,8 +945,8 @@ footer a:hover {
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background: url(../img/829.gif) 50% 50% no-repeat #000000;
-  opacity: 97.7%;
+  background: url(../img/rerere.gif) 50% 50% no-repeat #ffffff;
+  opacity: 97.8%;
 }
 
 .fontheight {
