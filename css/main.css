@@ -1,3 +1,4 @@
+@import 'https://fonts.googleapis.com/css?family=Karla';
 .tabletitulo {
   font-size: 1.5em;
   font-weight: bold;
@@ -8,8 +9,6 @@
 }
 
 p {
-  font-size: 1em;
-  text-shadow: 0px 0px 0px black;
   font-family: "monument extended";
 }
 
@@ -32,6 +31,14 @@ ul {
 
 .robby {
   margin-bottom: 2em;
+}
+
+.gallery {
+  background-color: black;
+  padding: 14px;
+  width: 100%;
+  box-shadow: 5px 5px 15px red;
+  cursor: pointer;
 }
 
 .guitartitle {
@@ -94,6 +101,12 @@ ul {
     display: none;
   }
 
+  p {
+    font-size: 1em;
+    text-shadow: 0px 0px 0px black;
+    font-family: "monument extended";
+  }
+
   .titleband {
     font-size: 2.8em;
   }
@@ -148,25 +161,25 @@ ul {
     box-shadow: 0px 0px 10px #1453ff;
   }
 
-  .fa-twitter {
+  .tw, .fa-certificate {
     border-radius: 100%;
     color: #85a6ff;
     filter: drop-shadow(0px 0px 10px #85a6ff);
     transition: all 0.4s;
   }
 
-  .fa-twitter:hover {
+  .tw:hover, .fa-certificate:hover {
     box-shadow: 0px 0px 10px #85a6ff;
   }
 
-  .fa-instagram {
+  .ig {
     border-radius: 100%;
     color: #750d37;
     filter: drop-shadow(0px 0px 10px #750D37);
     transition: all 0.4s;
   }
 
-  .fa-instagram:hover {
+  .ig:hover {
     box-shadow: 0px 0px 10px #750D37;
   }
 
@@ -410,33 +423,26 @@ body {
   font-family: Monument Extended;
   src: url("../fonts/MonumentExtendedR.otf");
 }
-.fa-twitter {
+.tw, .fa-certificate {
   border-radius: 100%;
   color: #85a6ff;
   filter: drop-shadow(0px 0px 10px #85a6ff);
   transition: all 0.4s;
 }
 
-.fa-twitter:hover {
+.tw:hover, .fa-certificate:hover {
   box-shadow: 0px 0px 10px #85a6ff;
 }
 
-.fa-instagram {
+.ig {
   border-radius: 100%;
   color: #750d37;
   filter: drop-shadow(0px 0px 10px #750D37);
   transition: all 0.4s;
 }
 
-.fa-instagram:hover {
+.ig:hover {
   box-shadow: 0px 0px 10px #750D37;
-}
-
-.fa-certificate {
-  border-radius: 100%;
-  color: #83ca00;
-  filter: drop-shadow(0px 0px 10px #83ca00);
-  transition: all 0.4s;
 }
 
 .fa-certificate:hover {
@@ -585,6 +591,10 @@ body {
   .titlebio {
     margin-left: 23%;
   }
+
+  .batman {
+    display: none;
+  }
 }
 @media (max-width: 400px) {
   .titleband2 {
@@ -692,16 +702,9 @@ table th {
 }
 
 .gallery {
-  background-color: #fffb00;
+  background-color: #000000;
+  background-image: linear-gradient(132deg, #000000 0%, #780000 100%);
   padding: 0 0;
-}
-
-.gallery .tupac {
-  background-color: black;
-  padding: 14px;
-  width: 100%;
-  box-shadow: 5px 5px 15px red;
-  cursor: pointer;
 }
 
 .gallery-item {
@@ -709,7 +712,15 @@ table th {
   padding: 1rem;
   margin-bottom: 1.3rem;
   width: 100%;
-  box-shadow: 5px 5px 15px black;
+  box-shadow: 5px 5px 15px #f00;
+  cursor: pointer;
+}
+
+.gallery-ruin {
+  background-color: #fff;
+  padding: 0.5rem;
+  width: 100%;
+  box-shadow: 5px 5px 15px #000;
   cursor: pointer;
 }
 
@@ -726,15 +737,23 @@ table th {
 }
 
 .modal-body {
-  background-color: black;
+  background-color: transparent;
 }
 
 .modal-header {
-  background-color: black;
+  background-color: transparent;
+}
+
+.modal-fade {
+  background-color: #580505;
 }
 
 .modal-content {
   background-color: #000;
+}
+
+.gallery-ruin {
+  width: 100%;
 }
 
 footer {
@@ -850,10 +869,11 @@ footer a:hover {
 
 .list-group-item {
   background-color: transparent;
+  cursor: default;
 }
 
 .nombrefoot {
-  text-transform: uppercase;
+  text-transform: uppercas;
   text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.05em 0 rgba(0, 255, 0, 0.75), 0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
   animation: glitch 240ms infinite;
   position: relative;
@@ -970,10 +990,6 @@ footer a:hover {
   color: #fffb00;
 }
 
-#margenlist {
-  margin-right: 14rem;
-}
-
 #knoxville {
   background-color: #071b07f6;
 }
@@ -985,6 +1001,218 @@ footer a:hover {
 
 #finalcol {
   margin-bottom: 0;
+}
+
+:root {
+  font-size: 13px;
+}
+
+@media screen and (min-width: 1000px) {
+  :root {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1240px) {
+  :root {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1480px) {
+  :root {
+    font-size: 17px;
+  }
+}
+.rupolkontact {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Karla";
+  font-size: 1rem;
+  font-weight: 300;
+  color: #EEEEEE;
+  line-height: 2em;
+  background: #EEEEEE;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  background-color: #000000;
+  background-image: linear-gradient(132deg, #000000 0%, #780000 100%);
+}
+.main .header,
+.main legend.header {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1.25rem;
+  margin: 0.7em -0.13em;
+}
+.main .bio,
+.main .contact {
+  max-width: 320px;
+}
+.main .profile-img:hover {
+  transform: scale(1.2);
+  transition: all 1s ease;
+  cursor: pointer;
+}
+.main .bio {
+  margin-bottom: 7rem;
+}
+.main .bio .profile-img {
+  max-width: 14em;
+  height: 100%;
+  border-radius: 30px;
+  margin-bottom: 1.5rem;
+  background-color: #000000;
+  background-image: linear-gradient(132deg, #000000 0%, #000000 100%);
+}
+.main .bio .bio-link {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1rem;
+  display: inline-block;
+  float: left;
+  clear: left;
+  text-decoration: none;
+  color: #EEEEEE;
+  margin-bottom: 0.25em;
+  transition: color 300ms ease-in-out;
+}
+.main .bio .bio-link i {
+  margin-left: 8px;
+}
+.main .bio .bio-link::after {
+  display: block;
+  content: "";
+  height: 1px;
+  width: 0;
+  background: #CA8D6E;
+  transition: width 300ms ease-in-out;
+}
+.main .bio .bio-link:hover::after {
+  width: 100%;
+}
+.main .bio .bio-link:hover {
+  color: #CA8D6E;
+}
+.main .contact {
+  color: #CA8D6E;
+}
+.main .contact form fieldset {
+  font-size: 1rem;
+  position: relative;
+  border: none;
+  margin-bottom: 0.25em;
+  padding: 0.25em 0;
+}
+.main .contact form fieldset label {
+  font-size: 0.875rem;
+  display: block;
+  position: absolute;
+  right: 0.125em;
+  top: 1.5em;
+  color: #CA8D6E;
+}
+.main .contact form input,
+.main .contact form textarea,
+.main .contact form button {
+  border: 0;
+}
+.main .contact form input:focus,
+.main .contact form textarea:focus,
+.main .contact form button:focus {
+  outline: none;
+}
+.main .contact form input,
+.main .contact form textarea {
+  display: block;
+  font-family: "Karla";
+  font-size: 1rem;
+  padding: 0.5em 0;
+  width: 280px;
+  background: none;
+  color: #CA8D6E;
+  border-bottom: 1px solid #7D6962;
+  transition: border 300ms ease-in-out;
+}
+.main .contact form input:focus,
+.main .contact form textarea:focus {
+  border-bottom: 1px solid #CA8D6E;
+}
+.main .contact form input::placeholder,
+.main .contact form textarea::placeholder {
+  color: #7D6962;
+}
+.main .contact button {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1rem;
+  display: block;
+  background: #CA8D6E;
+  color: #EEEEEE;
+  padding: 0.5em 40%;
+  box-shadow: 0 0 40px 0 rgba(21, 21, 21, 0.6);
+  margin-top: 3rem;
+}
+.main .contact button:hover {
+  animation: swell 500ms ease-in-out;
+  cursor: pointer;
+}
+.main .contact textarea {
+  resize: none;
+}
+
+.main {
+  overflow: hidden;
+  animation: Page 600ms ease-in-out forwards;
+}
+
+.bio {
+  animation: Bio 600ms ease-in-out forwards;
+}
+
+.contact {
+  animation: Contact 600ms ease-in-out forwards;
+}
+
+@keyframes Page {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes Bio {
+  0% {
+    transform: translateX(-50vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes Contact {
+  0% {
+    transform: translateX(50vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes swell {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

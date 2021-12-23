@@ -1,3 +1,5 @@
+@import 'https://fonts.googleapis.com/css?family=Karla';
+
 $titulos-sub: 1.5em;
 $sub-parrafo: 0.9em;
 $principal-titulo: 3em;
@@ -12,7 +14,12 @@ $tipo-letra-cowboy: 'Roboto Slab';
 $tipo-letra-nav: 'Lato';
 $titulo-responsive: 2.8em;
 $parrafo-grandote: 1.1em;
-
+$rust: #CA8D6E;
+$lunar: #383745;
+$deep: #22202B;
+$white: #EEEEEE;
+$mud: #7D6962;
+$transblack: rgba(0, 0, 0, 0.3);
 
 
 .tabletitulo {
@@ -24,12 +31,19 @@ $parrafo-grandote: 1.1em;
   text-decoration: underline;
 }
 
+$mapeando: (
+color: rgb(0, 0, 0),
+fuentefamily: 'monument extended',
+text-shadow: $sombra-texto
+
+);
+
 p {
-  font-size: $parrafo-tamanio;
-  text-shadow: $sombra-texto;
-  font-family: 'monument extended' ;
   
+  font-family: map-get($map: $mapeando , $key: fuentefamily);
+  text-shadow: map-get($map: $mapeando, $key: $sombra-texto);
 }
+
 
 ul {
   font-size: $parrafo-tamanio;
@@ -51,6 +65,18 @@ ul {
 
 .robby {
   margin-bottom: 2em;
+}
+
+@mixin tupac () {
+  background-color: black;
+  padding: 14px;
+  width: 100%;
+  box-shadow: 5px 5px 15px rgb(255, 0, 0);
+  cursor: pointer;
+}
+
+.gallery {
+  @include tupac();
 }
 
 .guitartitle  {
@@ -129,6 +155,14 @@ ul {
     
   }
   
+  
+p {
+  font-size: $parrafo-tamanio;
+  text-shadow: $sombra-texto;
+  font-family: 'monument extended' ;
+  
+}
+
   .titleband {
     font-size: $titulo-responsive;
   }
@@ -207,7 +241,7 @@ ul {
  
 }
 
-.fa-twitter {
+.tw {
   border-radius: 100%;
   color: #85a6ff;
   filter: drop-shadow(0px 0px 10px #85a6ff);
@@ -215,11 +249,11 @@ ul {
 
 }
 
-.fa-twitter:hover {
+.tw:hover {
   box-shadow: 0px 0px 10px #85a6ff;
 }
 
-.fa-instagram {
+.ig {
   border-radius: 100%;
   color: #750d37;
   filter: drop-shadow(0px 0px 10px #750D37);
@@ -227,7 +261,7 @@ ul {
 
 }
 
-.fa-instagram:hover {
+.ig:hover {
   box-shadow: 0px 0px 10px #750D37;
 }
 
@@ -509,7 +543,7 @@ body {
 
 
 
-.fa-twitter {
+.tw {
   border-radius: 100%;
   color: #85a6ff;
   filter: drop-shadow(0px 0px 10px #85a6ff);
@@ -517,11 +551,11 @@ body {
 
 }
 
-.fa-twitter:hover {
+.tw:hover {
   box-shadow: 0px 0px 10px #85a6ff;
 }
 
-.fa-instagram {
+.ig {
   border-radius: 100%;
   color: #750d37;
   filter: drop-shadow(0px 0px 10px #750D37);
@@ -529,16 +563,13 @@ body {
 
 }
 
-.fa-instagram:hover {
+.ig:hover {
   box-shadow: 0px 0px 10px #750D37;
 }
 
 .fa-certificate {   
 
-  border-radius: 100%;
-  color: #83ca00;
-  filter: drop-shadow(0px 0px 10px #83ca00);
-  transition: all .4s
+  @extend .tw;
 
 }
 
@@ -719,6 +750,11 @@ body {
     margin-left: 23%;
   }
 
+  .batman {
+    display: none;
+  }
+
+  
 }
 
 
@@ -857,18 +893,10 @@ table th {
 }
 
 .gallery {
-  background-color: #fffb00;
+  background-color: #000000;
+  background-image: linear-gradient(132deg, #000000 0%, #780000 100%);
   padding: 0 0;
  
-}
-
-.gallery .tupac {
-  background-color: black;
-  padding: 14px;
-  
-  width: 100%;
-  box-shadow: 5px 5px 15px rgb(255, 0, 0);
-  cursor: pointer;
 }
 
 .gallery-item  {
@@ -877,9 +905,21 @@ table th {
 
   margin-bottom: 1.3rem;
   width: 100%;
-  box-shadow: 5px 5px 15px rgb(0, 0, 0);
+  box-shadow: 5px 5px 15px #f00;
   cursor: pointer;
 }
+
+.gallery-ruin {
+  background-color: #fff;
+  padding: 0.5rem;
+  width: 100%;
+  box-shadow: 5px 5px 15px #000;
+  cursor: pointer;
+}
+
+
+
+
 
 .gallery-item:hover {
   transform: scale(1.2);
@@ -895,15 +935,22 @@ transform: scale(1.2);
 }
 
 .modal-body {
-  background-color: rgb(0, 0, 0);
+  background-color: transparent ;
 }
 
 .modal-header {
-  background-color: rgb(0, 0, 0);
+  background-color: transparent;
 }
-
+.modal-fade {
+  background-color: #580505;
+}
 .modal-content {
   background-color: #000;
+}
+
+
+.gallery-ruin {
+  width: 100%;
 }
 
 footer {
@@ -1049,12 +1096,13 @@ footer {
 
 .list-group-item {
   background-color: transparent;
+  cursor: default;
 }
 
 
 
 .nombrefoot {
-  text-transform: uppercase;
+  text-transform: uppercas;;
   text-shadow:0.05em 0 0 rgba(255,0,0,.75),
              -0.025em -0.05em 0  rgba(0,255,0,0.75),
               0.025em 0.05em 0  rgba(0,0,255,0.75);
@@ -1218,7 +1266,7 @@ footer {
 }
 
 #margenlist {
-  margin-right: 14rem;
+  
   
 }
 
@@ -1233,4 +1281,238 @@ footer {
 
 #finalcol {
   margin-bottom: 0;
+}
+
+
+
+
+
+
+@mixin capsfont($size) {
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: $size;
+}
+
+
+
+
+
+:root {
+	font-size: 13px;
+}
+@media screen and (min-width: 1000px) {
+	:root {
+		font-size: 14px;
+	}
+}
+@media screen and (min-width: 1240px) {
+	:root {
+		font-size: 16px;
+	}
+}
+@media screen and (min-width: 1480px) {
+	:root {
+		font-size: 17px;
+	}
+}
+
+.rupolkontact {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	font: {
+		family: 'Karla';
+		size: 1rem;
+		weight: 300;
+	}
+	color: $white;
+	line-height: 2em;
+	background: $white;
+}
+
+
+
+.main {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 100vh;
+	background-color: #000000;
+  background-image: linear-gradient(132deg, #000000 0%, #780000 100%);
+	.header,
+	legend.header {
+		@include capsfont (1.25rem);
+		margin: 0.7em -0.13em;
+	}
+	.bio,
+	.contact {
+		max-width: 320px;
+		
+	}
+
+  .profile-img:hover {
+    transform: scale(1.2);
+    transition: all 1s ease;
+    cursor: pointer;
+  }
+
+	.bio { margin-bottom: 7rem;
+		.profile-img {
+			max-width: 14em;
+      height: 100%;
+			border-radius: 30px;
+      margin-bottom: 1.5rem;
+      background-color: #000000;
+      background-image: linear-gradient(132deg, #000000 0%, #000000 100%);
+      
+		}
+		.bio-link {
+			@include capsfont(1rem);
+			display: inline-block;
+
+			float: left;
+			clear: left;
+			text-decoration: none;
+			color: $white;
+			margin-bottom: 0.25em;
+			transition: color 300ms ease-in-out;
+			i {
+				margin-left: 8px;
+			}
+			&::after {
+				display: block;
+				content: '';
+				height: 1px;
+				width: 0;
+				background: $rust;
+				transition: width 300ms ease-in-out;
+			}
+			&:hover::after {
+				width: 100%;
+			}
+			&:hover {
+				color: $rust;
+			}
+		}
+	}
+	.contact {
+		color: $rust;
+		form {
+			fieldset {
+				font-size: 1rem;
+				position: relative;
+				border: none;
+				margin-bottom: 0.25em;
+				padding: 0.25em 0;
+				label {
+					font-size: 0.875rem;
+					display: block;
+					position: absolute;
+					right: 0.125em;
+					top: 1.5em;
+					color: $rust;
+				}
+			}
+			input,
+			textarea,
+			button {
+				border: 0;
+				&:focus {
+					outline: none;
+				}
+			}
+			input,
+			textarea {
+				display: block;
+				font: {
+					family: 'Karla';
+					size: 1rem;
+				}
+				padding: 0.5em 0;
+				width: 280px;
+				background: none;
+				color: $rust;
+				border-bottom: 1px solid $mud;
+				transition: border 300ms ease-in-out;
+				&:focus {
+					border-bottom: 1px solid $rust;
+				}
+				&::placeholder {
+					color: $mud;
+				}
+			}
+		}
+		button {
+			@include capsfont (1rem);
+			display: block;
+			background: $rust;
+			color: $white;
+			padding: 0.5em 40%;
+			box-shadow: 0 0 40px 0 rgba(21, 21, 21, 0.6);
+      margin-top: 3rem;
+			&:hover {
+				animation: swell 500ms ease-in-out;
+				cursor: pointer;
+			}
+		}
+		textarea {
+			resize: none;
+		}
+	}
+}
+
+
+.main {
+	overflow: hidden;
+	animation: Page 600ms ease-in-out forwards;
+}
+
+.bio {
+	animation: Bio 600ms ease-in-out forwards;
+}
+
+.contact {
+	animation: Contact 600ms ease-in-out forwards;
+}
+
+
+@keyframes Page {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes Bio {
+	0% {
+		transform: translateX(-50vw);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes Contact {
+	0% {
+		transform: translateX(50vw);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes swell {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
 }

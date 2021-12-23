@@ -29,5 +29,22 @@ document.addEventListener("click",function (e){
   }
 })
 
+document.addEventListener("click",function (e){
+  if(e.target.classList.contains("gallery-ruin")){
+      const src = e.target.getAttribute("src");
+      document.querySelector(".modal-img").src = src;
+      const myModal = new bootstrap.Modal(document.getElementById('gallery-modal'));
+      myModal.show();
+  }
+})
 
+
+
+const submit = document.querySelector('#btn-submit'),
+			form = document.querySelector('#form');
+
+submit.addEventListener('click', (e) => {
+	e.preventDefault();
+	form.reset();
+}, false);
 
