@@ -175,7 +175,10 @@ p {
     margin-bottom: 1.5em;
     
   }
- 
+
+
+  
+
   }
 
 
@@ -719,6 +722,70 @@ body {
   margin-bottom: 1.5em;
   
 }
+@media (max-width: 509px) {
+
+  .robin {
+   
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    min-height: 140vh !important;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 7rem;
+    
+    
+  }
+
+.bio {
+  
+  margin-top: 5em;
+}
+
+.header {
+  
+}
+
+.bio-link {
+  align-items: center;
+  padding-left: 2.5em;
+}
+
+.profile-img {
+  padding-top: 10px !important;
+  width: 15em!important;
+  height: 135px !important;
+  margin-top: 10px !important;
+}
+  
+ 
+  
+  // .bio {
+  //   padding-left: 21.1rem;
+  // }
+
+  // .contact {
+  //  margin-right: 17rem;
+  
+  // }
+
+  // .main {
+  //   margin-right: 1rem;
+  // }
+
+  button {
+    width: 50%;
+    text-align: center;
+    padding: 0;
+  }
+
+  #btn-submit {
+    
+  }
+}
+
 
 @media (max-width: 580px) {
 
@@ -750,10 +817,8 @@ body {
     margin-left: 23%;
   }
 
-  .batman {
-    display: none;
-  }
 
+  
   
 }
 
@@ -768,6 +833,10 @@ body {
 .cent50 {
   font-size: 1.8em;
 }
+
+
+
+
 
 
 }
@@ -1343,12 +1412,15 @@ footer {
   background-image: linear-gradient(132deg, #000000 0%, #780000 100%);
 	.header,
 	legend.header {
-		@include capsfont (1.25rem);
-		margin: 0.7em -0.13em;
+		@include capsfont (2rem);
+		margin: 0.7em -1.13em;
+    color: red;
+    text-shadow: 1px 1px 1px black;
+    font-style: italic;
 	}
 	.bio,
 	.contact {
-		max-width: 320px;
+		max-width: 315px;
 		
 	}
 
@@ -1360,7 +1432,7 @@ footer {
 
 	.bio { margin-bottom: 7rem;
 		.profile-img {
-			max-width: 14em;
+			max-width: 100%;
       height: 100%;
 			border-radius: 30px;
       margin-bottom: 1.5rem;
@@ -1431,7 +1503,7 @@ footer {
 					size: 1rem;
 				}
 				padding: 0.5em 0;
-				width: 280px;
+				width: 100%;
 				background: none;
 				color: $rust;
 				border-bottom: 1px solid $mud;
@@ -1449,7 +1521,8 @@ footer {
 			display: block;
 			background: $rust;
 			color: $white;
-			padding: 0.5em 40%;
+			padding: 0.5em 10%;
+      width: 210px;
 			box-shadow: 0 0 40px 0 rgba(21, 21, 21, 0.6);
       margin-top: 3rem;
 			&:hover {
