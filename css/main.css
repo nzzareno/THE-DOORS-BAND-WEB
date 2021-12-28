@@ -224,8 +224,8 @@ ul {
 }
 .cssload-loader {
   position: relative;
-  left: 184%;
-  width: 38px;
+  left: 110%;
+  width: 50px;
   height: 38px;
   border-radius: 50%;
   -o-border-radius: 50%;
@@ -737,15 +737,15 @@ table th {
 
 .gallery-item {
   background-color: black;
-  padding: 1rem;
+  padding: 0.5rem;
   margin-bottom: 1.3rem;
   width: 100%;
-  box-shadow: 5px 5px 15px #f00;
+  box-shadow: 5px 5px 15px;
   cursor: pointer;
 }
 
 .gallery-ruin {
-  background-color: #fff;
+  background-color: #ff0;
   padding: 0.5rem;
   width: 100%;
   box-shadow: 5px 5px 15px #000;
@@ -753,11 +753,11 @@ table th {
 }
 
 .gallery-item:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .gallery:hover .tupac:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 #gallery-modal .modal-img {
@@ -1077,9 +1077,8 @@ footer a:hover {
   letter-spacing: 3px;
   font-size: 2rem;
   margin: 0.7em -1.13em;
-  color: red;
+  color: #E9967A;
   text-shadow: 1px 1px 1px black;
-  font-style: italic;
 }
 .main .bio,
 .main .contact {
