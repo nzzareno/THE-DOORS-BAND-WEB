@@ -1,3 +1,15 @@
+
+
+
+
+
+
+
+
+
+
+
+
 <?php
 $destino = 'garmatorresnazareno@gmail.com';
 $nombre = $_POST["oneinput"];
@@ -6,5 +18,5 @@ $mensaje = $_POST["threeinput"];
 $contenido = "oneinput: " . $nombre . "\ntwoinput: " . $email . "\nthreeinput: " . $mensaje;
 mail($destino, "Contacto", $contenido);
 
-header("Location:../index.html")
+header("Location:index.html")
 ?>
