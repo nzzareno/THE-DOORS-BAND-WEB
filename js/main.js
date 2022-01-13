@@ -8,7 +8,7 @@ var nav = document.querySelector('nav');
 window.addEventListener('scroll', function(event) { 
     event.preventDefault();
 
-    if (window.scrollY <= 260) { 
+    if (window.scrollY <= 270) { 
         nav.style.backgroundColor = '#092009;'; 
         
         

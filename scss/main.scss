@@ -21,6 +21,9 @@ $white: #EEEEEE;
 $mud: #7D6962;
 $transblack: rgba(0, 0, 0, 0.3);
 
+.cssload-inner, .cssload-loader, .cssload-one, .cssload-two, .cssload-three {
+ display: none;
+}
 
 .tabletitulo {
   font-size: $titulos-sub;
@@ -37,6 +40,11 @@ fuentefamily: 'monument extended',
 text-shadow: $sombra-texto
 
 );
+
+.cenaj {
+ color: #c8ff00; 
+}
+
 
 p {
   
@@ -722,7 +730,70 @@ body {
   margin-bottom: 1.5em;
   
 }
-@media (max-width: 509px) {
+
+@media (max-height: 700px) {
+  
+  .main {
+    display: flex;
+    flex-direction: row;
+    min-height: 170vh !important;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 2rem;
+    
+}
+
+.bio {
+  
+  margin-top: 5em;
+}
+
+.header {
+  
+}
+
+.bio-link {
+  align-items: center;
+  padding-left: 2.5em;
+}
+
+.profile-img {
+  padding-top: 10px !important;
+  width: 15em!important;
+  height: 135px !important;
+  margin-top: 10px !important;
+}
+  
+ 
+  
+  // .bio {
+  //   padding-left: 21.1rem;
+  // }
+
+  // .contact {
+  //  margin-right: 17rem;
+  
+  // }
+
+  // .main {
+  //   margin-right: 1rem;
+  // }
+
+  button {
+    
+    text-align: center;
+    padding: 0;
+    
+  }
+
+  #btn-submit {
+    
+  }
+}
+
+
+
+@media (max-width: 647px) {
 
   .robin {
    
@@ -731,10 +802,10 @@ body {
   .main {
     display: flex;
     flex-direction: column;
-    min-height: 140vh !important;
+    min-height: 155vh !important;
     align-items: center;
     text-align: center;
-    padding-bottom: 7rem;
+    padding-bottom: 2rem;
     
     
   }
@@ -776,9 +847,10 @@ body {
   // }
 
   button {
-    width: 50%;
+    
     text-align: center;
     padding: 0;
+    
   }
 
   #btn-submit {
@@ -866,13 +938,20 @@ body {
 }
 
 
+.cenajj {
+  color: white;
+}
+
 table th {
   font-family: 'Monument Extended';
   text-align: center;
   font-size: 1.3em;
+  color: yellow;
 }
 
-
+tbody tr {
+  
+}
 
 .carreraray {
   color: #ffff68;
@@ -1412,8 +1491,8 @@ footer {
   background-image: linear-gradient(132deg, #000000 0%, #780000 100%);
 	.header,
 	legend.header {
-		@include capsfont (2rem);
-		margin: 0.7em -1.13em;
+		@include capsfont (1.9rem);
+		margin: 0.7em 0;
     color: #E9967A;
     text-shadow: 1px 1px 1px black;
     
@@ -1477,7 +1556,7 @@ footer {
 				position: relative;
 				border: none;
 				margin-bottom: 0.25em;
-				padding: 0.25em 0;
+				padding: 1em 0;
 				label {
 					font-size: 0.875rem;
 					display: block;
@@ -1524,9 +1603,10 @@ footer {
 			padding: 0.5em 10%;
       width: 210px;
 			box-shadow: 0 0 40px 0 rgba(21, 21, 21, 0.6);
-      margin-top: 3rem;
+      margin-top: 1rem;
 			&:hover {
 				animation: swell 500ms ease-in-out;
+        color: black;
 				cursor: pointer;
 			}
 		}

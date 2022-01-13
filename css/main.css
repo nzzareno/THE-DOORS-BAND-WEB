@@ -1,4 +1,8 @@
 @import 'https://fonts.googleapis.com/css?family=Karla';
+.cssload-inner, .cssload-loader, .cssload-one, .cssload-two, .cssload-three {
+  display: none;
+}
+
 .tabletitulo {
   font-size: 1.5em;
   font-weight: bold;
@@ -6,6 +10,10 @@
   margin-top: 0.6em;
   font-family: "Merriweather";
   text-decoration: underline;
+}
+
+.cenaj {
+  color: #c8ff00;
 }
 
 p {
@@ -563,14 +571,14 @@ body {
   margin-bottom: 1.5em;
 }
 
-@media (max-width: 509px) {
+@media (max-height: 700px) {
   .main {
     display: flex;
-    flex-direction: column;
-    min-height: 140vh !important;
+    flex-direction: row;
+    min-height: 170vh !important;
     align-items: center;
     text-align: center;
-    padding-bottom: 7rem;
+    padding-bottom: 2rem;
   }
 
   .bio {
@@ -590,7 +598,37 @@ body {
   }
 
   button {
-    width: 50%;
+    text-align: center;
+    padding: 0;
+  }
+}
+@media (max-width: 647px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    min-height: 155vh !important;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  .bio {
+    margin-top: 5em;
+  }
+
+  .bio-link {
+    align-items: center;
+    padding-left: 2.5em;
+  }
+
+  .profile-img {
+    padding-top: 10px !important;
+    width: 15em !important;
+    height: 135px !important;
+    margin-top: 10px !important;
+  }
+
+  button {
     text-align: center;
     padding: 0;
   }
@@ -651,10 +689,15 @@ body {
     font-size: 1.2em;
   }
 }
+.cenajj {
+  color: white;
+}
+
 table th {
   font-family: "Monument Extended";
   text-align: center;
   font-size: 1.3em;
+  color: yellow;
 }
 
 .carreraray {
@@ -1075,8 +1118,8 @@ footer a:hover {
 .main legend.header {
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-size: 2rem;
-  margin: 0.7em -1.13em;
+  font-size: 1.9rem;
+  margin: 0.7em 0;
   color: #E9967A;
   text-shadow: 1px 1px 1px black;
 }
@@ -1137,7 +1180,7 @@ footer a:hover {
   position: relative;
   border: none;
   margin-bottom: 0.25em;
-  padding: 0.25em 0;
+  padding: 1em 0;
 }
 .main .contact form fieldset label {
   font-size: 0.875rem;
@@ -1187,10 +1230,11 @@ footer a:hover {
   padding: 0.5em 10%;
   width: 210px;
   box-shadow: 0 0 40px 0 rgba(21, 21, 21, 0.6);
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 .main .contact button:hover {
   animation: swell 500ms ease-in-out;
+  color: black;
   cursor: pointer;
 }
 .main .contact textarea {
